@@ -1,0 +1,90 @@
+public class addition{
+/**
+* @author - Leander Dsouza
+* @param a - Accepts first integer
+* @param b - Accepts second integer
+* @return - Final answer
+*/
+
+public int add(int a, int b){
+return a+b;
+}
+}
+------------------------------------
+class additionTest{
+@Test
+void test(){
+//fail("Not yet implemented");
+}
+
+@Test
+@DisplayName("Addition Test");
+
+void addTest(){
+addition obj1 = new addition();
+int expected = 4;
+int actual = obj1.add(2,2);
+assertEquals(expected,actual);
+}
+}
+
+public class subtraction{
+/**
+* @author - Leander Dsouza
+* @param a - Accepts first integer
+* @param b - Accepts second integer
+* @return - Final answer
+*/
+
+public int subtract(int a, int b){
+return a-b;
+}
+}
+------------------------------------
+class subtractionTest{
+@Test
+void test(){
+//fail("Not yet implemented")
+}
+
+@Test
+@Disabled
+@DisplayName("Subtraction Test")
+
+void subTest(){
+subtraction obj1 = new subtraction();
+int expected = 0;
+int actual = obj1.subtract(2,2);
+assertEquals(expected,actual);
+}
+}
+
+public class multiplication{
+/**
+* @author - Leander Dsouza
+* @param a - Accepts first integer
+* @param b - Accepts second integer
+* @return - Final answer
+*/
+
+public int multiply(int a, int b){
+return a*b;
+}
+}
+------------------------------------
+class multiplicationTest{
+@Test
+void test(){
+//fail("Not yet implemented");
+}
+
+@Test
+void multiTest(){
+multiplication obj1 = new multiplication();
+int expected = 4;
+int actual = obj1.multiply(2,2);
+assertEquals(expected,actual);
+}
+}
+
+
